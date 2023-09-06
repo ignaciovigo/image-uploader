@@ -37,6 +37,7 @@
 ## Overview
 
 ![screenshot](./public/preview.gif)
+
 In this project, you have the option to upload images by either clicking the "Choose file" button or simply dragging and dropping your image into the designated area within the interface. Once the image is successfully uploaded, you will receive a URL link.
 
 To explore the project further, visit the following link: [Click here to see it in action](https://image-uploader-lime-mu.vercel.app/)
