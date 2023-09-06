@@ -17,9 +17,8 @@ export default function InputBox({ newUrl }) {
         newUrl(resp.data.secure_url, "done");
       })
       .catch((error) => {
-        console.error("Could not get the image");
+        console.error(error.message,error.response.data.error.message);
         newUrl("", "initial");
-        throw Error("Could not perform the operation");
       });
   };
 

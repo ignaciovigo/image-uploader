@@ -13,6 +13,7 @@ export default function Home() {
     setStatus(state)
   }
   return (
+    <>
     <main className='min-h-screen grid place-content-center bg-[#111111]'>
       
       <section className='rounded-lg px-4 py-6 gap-6 w-[402px] h-[469px] flex flex-col justify-center items-center ff-first'>
@@ -24,9 +25,11 @@ export default function Home() {
       }
       {
         status === 'done' && <Done url={url} newUrl={newUrl} />
-
+        
       }
       </section>
+    <article className='mt-4 flex justify-center items-center text-gray-500'>Developed by ignaciovigo</article>
     </main>
+      </>
   );
 }
