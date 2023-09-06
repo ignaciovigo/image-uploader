@@ -25,3 +25,52 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.loader{
+  display: block;
+  position: relative;
+  height: 4px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #111111;
+}
+.loader::before{
+  content:"";
+  background-color: #2F80ED;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 0%;
+  height: 100%;
+  border-radius: 8px;
+  animation: moving .8s ease-in-out infinite;
+}
+
+
+.copy:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease; 
+}
+
+.copy-icon::after {
+  content: 'copy'; 
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+  margin-left: 5px; 
+}
+
+.copy:hover .copy-icon::after {
+  opacity: 1; 
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
